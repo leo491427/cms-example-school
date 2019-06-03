@@ -9,7 +9,7 @@ const {
     deleteTeacherCourseById,
 } =require('../controllers/teachers');
 
-const routeTeachers = express();
+const routeTeachers = express.Router();
 
 routeTeachers.get('', getAllTeachers);
 

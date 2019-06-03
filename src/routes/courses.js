@@ -7,7 +7,7 @@ const {
     deleteCourseById,
 } =require('../controllers/courses');
 
-const routeCourses = express();
+const routeCourses = express.Router();
 
 routeCourses.get('', getAllCourses);
 

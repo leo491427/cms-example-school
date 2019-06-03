@@ -1,6 +1,7 @@
 
 function getAllTeachers (req, res) {
     return res.json('getAllTeachers2');
+    // res.send(`hello`);
 }
 
 function getTeacherById (req, res) {
