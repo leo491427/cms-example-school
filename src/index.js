@@ -21,7 +21,7 @@ app.use(express.json());             // ？起了什么作用？如果没有的�
 
 // ？命名有什么特别要求？
 app.use('/v1', routes);
-app.use(erroHandler);
+app.use(erroHandler);    //? ？errorhandler写在哪里都可以对吗？一个项目只有一个errohandler? 系统如何知道是errohandler?凭借参数来判断吗？
 
 connectToDB()
   .then(() => {
